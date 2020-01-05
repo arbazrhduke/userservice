@@ -7,4 +7,4 @@ services:
 
 before_script: pip install docker-compose
 
-script: docker-compose run --rm usermgmt sh -c "python manage.py test"
+script: docker-compose run --rm usermgmt sh -c "python manage.py test && flake8"
